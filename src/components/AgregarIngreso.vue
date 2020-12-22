@@ -56,8 +56,8 @@ export default {
                 
             };
             axios
-                //.post("https://planifinanzassprint2.herokuapp.com/ingresos/agregar/", datosJSON)
-                .post("http://localhost:8000/ingresos/nuevo/", datosJSON)
+                //.post("http://localhost:8000/ingresos/nuevo/", datosJSON)
+                .post("https://planifinanzas-back-sprint4.herokuapp.com/ingresos/nuevo/", datosJSON)
                 .then(respuesta =>{
                     alert(respuesta.data.mensaje);
 

@@ -46,8 +46,8 @@ export default {
     },
     beforeCreate: function (){
         axios
-        //.get("https://planifinanzassprint2.herokuapp.com/ingresos/")
-        .get("http://localhost:8000/ingresos/")
+        //.get("http://localhost:8000/ingresos/")
+        .get("https://planifinanzas-back-sprint4.herokuapp.com/ingresos/")
         .then(respuesta=>{
             this.ingresos=respuesta.data;
         })
